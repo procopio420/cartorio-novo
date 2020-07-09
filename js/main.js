@@ -1,3 +1,5 @@
+ const logo = document.getElementById('logo');
+
  AOS.init({
      duration: 800,
      easing: 'slide'
@@ -144,11 +146,13 @@
              if (st > 150) {
                  if (!navbar.hasClass('scrolled')) {
                      navbar.addClass('scrolled');
+                     logo.src = 'logo-azul.png'
                  }
              }
              if (st < 150) {
                  if (navbar.hasClass('scrolled')) {
                      navbar.removeClass('scrolled sleep');
+                     logo.src = 'logo.png'
                  }
              }
              if (st > 350) {
@@ -333,7 +337,11 @@
              this.txt = fullTxt.substring(0, this.txt.length + 1);
          }
 
-         this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+         if (this.txt.length) {
+             this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+         } else {
+             this.el.innerHTML = '<span class="wrap">' + '<br/>' + '</span>';
+         }
 
          var that = this;
          var delta = 300 - Math.random() * 100;
