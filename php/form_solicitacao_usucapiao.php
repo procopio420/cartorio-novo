@@ -1,7 +1,6 @@
 <?php
 # Put your config
 $emailTo = "contato@9oficioniteroi.com";
-$vname = "Cartorio 9 Oficio Niteroi";
 $subject = "Pedido de Usucapião Extrajudicial";
 
 # End your config

@@ -1,7 +1,6 @@
 <?php
 # Put your config
 $emailTo = "contato@9oficioniteroi.com";
-$vname = "Cartorio 9 Oficio Niteroi";
 $subject = "Pedido de Ata Notarial";
 
 # End your config
@@ -11,8 +10,6 @@ $email    =  $_POST['email'];
 $telefone =  $_POST['phone'];
 $escrevente =  $_POST['escrevente'];
 
-$objeto = $_POST['objeto'];
- 
 $message = '
 ----------------------------------------------------------------
 O seguinte pedido de Ata Notarial foi realizado:
@@ -25,11 +22,6 @@ Telefone: ' . $telefone . '
 Escrevente de preferencia: ' . $escrevente . '
 
 |DADOS DA ATA|
-
-Objeto da Ata: ' . $objeto . '
-
-
-|DETALHES|
 
 ' . $_POST['message'] . '
 

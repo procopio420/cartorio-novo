@@ -14,6 +14,7 @@
     <link rel="icon" href="./images/img/logo-fav.png">
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/78eddd20d4.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -81,47 +82,77 @@
         </div>
     </div>
 
-    <section class="ftco-section contact-section">
-        <div class="container">
-            <div class="row d-flex mb-5 contact-info">
-                <div class="col-md-12 mb-4">
-                    <h2 class="h3">Informacoes de contato</h2>
-                </div>
-                <div class="w-100"></div>
-                <div class="col-md-3">
-                    <strong>Endereco:</strong>
-                    <p>Rua Coronel Gomes Machado, 118 Centro, Niterói-RJ 24020-065</p>
-                </div>
-                <div class="col-md-3">
-                    <strong>Telefones:</strong>
-                    <p><a href="tel://+552126135381">(21) 2613-5381</a><br><a href="tel://+5521981680876">(21) 9 8168-0876</a></p>
-                </div>
-                <div class="col-md-3">
-                    <strong>Emails:</strong>
-                    <p><a href="mailto:oficio9.niteroi@ig.com.br">oficio9.niteroi@ig.com.br</a><br><a href="mailto:oficio9.niteroi@yahoo.com.br">oficio9.niteroi@yahoo.com.br</a></p>
-                </div>
-                <div class="col-md-3">
-                    <strong>Ouvidoria:</strong>
-                    <p><a href="tel://+5521981680876">(21) 9 8168-0876</a></p>
+    <section class="ftco-section ftco-no-pt">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-12 services1-wrap px-4 pt-5">
+                    <h1 style="color: #fff;line-height: 1.5;font-weight: 700;font-family: ' Poppins ', Arial, sans-serif;" class="text-center text-white mb-3">Informacoes de contato</h1>
+
+                    <div class="row pt-md-3">
+
+                        <div class="col-md-4 d-flex align-items-stretch">
+                            <div class="services text-center">
+                                <div class="icon d-flex justify-content-center align-items-center">
+                                    <span class="fas fa-phone" aria-hidden="true"></span>
+                                </div>
+                                <div class="text">
+                                    <h3>Telefone</h3>
+                                    <p><a href="tel://+552126135381">(21) 2613-5381</a><br><a href="tel://+5521981680876">(21) 9 8168-0876</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-stretch">
+                            <div class="services text-center">
+                                <div class="icon d-flex justify-content-center align-items-center">
+                                    <span class="fas fa-envelope" aria-hidden="true"></span>
+
+                                </div>
+                                <div class="text">
+                                    <h3>Email</h3>
+                                    <p><a href="mailto:oficio9.niteroi@ig.com.br">oficio9.niteroi@ig.com.br</a><br><a href="mailto:oficio9.niteroi@yahoo.com.br">oficio9.niteroi@yahoo.com.br</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-stretch">
+                            <div class="services text-center">
+                                <div class="icon d-flex justify-content-center align-items-center">
+                                    <span class="fas fa-search" aria-hidden="true"></span>
+                                </div>
+                                <div class="text">
+                                    <h3>Ouvidoria</h3>
+                                    <p><a href="tel://+5521981680876">(21) 9 8168-0876</a></p>
+                                </div>
+                                <a href="servicos/divorcios.html" class="btn-custom d-flex align-items-center justify-content-center"><span
+                                        class="ion-ios-arrow-round-forward"></span></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <div id="contato" class="mb-5"></div>
+    <section class="ftco-section pt-0 contact-section">
+        <div class="container">
             <div class="row block-9 no-gutters">
                 <div class="col-lg-6 order-md-last d-flex">
-                    <form action="#" id="contato" class="bg-light p-5 contact-form">
+                    <form action="php/form_contato.php" method="POST" class="bg-light p-5 contact-form">
+                        <h1 class="text-center">Contato</h1>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Nome">
+                            <input name="name" type="text" class="form-control" placeholder="Nome">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Email">
+                            <input name="email" type="text" class="form-control" placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Telefone">
+                            <input name="phone" type="text" class="form-control" placeholder="Telefone">
                         </div>
                         <div class="form-group">
-                            <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Mensagem"></textarea>
+                            <textarea name="message" cols="30" rows="7" class="form-control" placeholder="Mensagem"></textarea>
                         </div>
-                        <div class="form-group">
-                            <input type="submit" value="Enviar mensagem" class="btn btn-primary py-3 px-5">
+                        <div class="form-group d-flex justify-content-center">
+                            <button type="submit" class="btn btn-primary py-3 px-5">Enviar mensagem</button>
                         </div>
                     </form>
 

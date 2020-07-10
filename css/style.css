@@ -11449,6 +11449,18 @@ h5,
     background: #0073ff;
 }
 
+.services1-wrap:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    content: '';
+    height: 240px;
+    background: #0073ff;
+}
+
 @media (max-width: 767.98px) {
     .services-wrap:after {
         height: 100%;
@@ -11502,7 +11514,12 @@ h5,
 
 .services .text h3 {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
+}
+
+.services .text p {
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .services .btn-custom {
