@@ -90,7 +90,10 @@
                             <input name="email" type="text" class="form-control" placeholder="Email">
                         </div>
                         <div class="form-group mb-1">
-                            <input name="escrevente" type="text" class="form-control" placeholder="Escrevente de preferencia">
+                            <select class="form-control" aria-placeholder="Escrevente de preferencias" id="escreventeSelect" name="escrevente" type="email" required>
+                                <option selected disabled value="Sem preferencia">Escrevente de preferencia</option>
+                                <option value="Sem preferencia">Sem preferencia</option>
+                            </select>
                         </div>
                         <div class="form-group mb-1">
                             <textarea name="message" cols="30" rows="5" class="form-control" placeholder="Observacoes"></textarea>
@@ -156,7 +159,10 @@
             </div>
         </div>
     </section>
-    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+            stroke="#0073ff" /></svg></div>
 
 
     <script src="../js/jquery.min.js"></script>
