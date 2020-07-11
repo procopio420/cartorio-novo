@@ -1,6 +1,6 @@
 <?php
 # Put your config
-$emailTo = "contato@9oficioniteroi.com";
+$emailTo = "teste@9oficioniteroi.com";
 $vname = "Cartorio 9 Oficio Niteroi";
 
 # End your config
