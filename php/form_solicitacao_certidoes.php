@@ -1,7 +1,6 @@
 <?php
 # Put your config
 $emailTo = "contato@9oficioniteroi.com";
-$vname = "Cartorio 9 Oficio Niteroi";
 $subject = "Pedido de Certidão";
 
 # End your config
@@ -9,7 +8,6 @@ $subject = "Pedido de Certidão";
 $name     =  $_POST['name'];
 $email    =  $_POST['email'];
 $telefone =  $_POST['phone'];
-$escrevente =  $_POST['escrevente'];
 
 $tipo_certidao = $_POST['tipo'];
  
@@ -22,7 +20,6 @@ O seguinte pedido de Certidão foi realizado:
 Nome: ' . $name . '
 E-mail: ' . $email . '
 Telefone: ' . $telefone . '
-Escrevente de preferencia: ' . $escrevente . '
 
 |DADOS DA CERTIDAO|
 

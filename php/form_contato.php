@@ -6,7 +6,6 @@ $vname = "Cartorio 9 Oficio Niteroi";
 # End your config
  
 $name     =  $_POST['name'];
-$sobrenome = $_POST['sname'];
 $email    =  $_POST['email'];
 $telefone =  $_POST['phone'];
 $subject  = 'Contato enviado por 9oficioniteroi.com';
@@ -16,7 +15,6 @@ $message = '
 O teu site ' . $vname . '. Enviou o seguinte contato:
 ----------------------------------------------------------------
 Nome: ' . $name . '
-Sobrenome: ' . $sobrenome . '
 E-mail: ' . $email . '
 Telefone: ' . $telefone . '
  

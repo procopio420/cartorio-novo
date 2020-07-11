@@ -74,34 +74,34 @@
                 <div class="col-md-5 ftco-animate">
                     <h1 class="mb-3">Escritura</h1>
                     <p>Essa é a principal atribuição do Tabelião, cujo instrumento é considerado autêntico e verdadeiro para todos os efeitos.</p>
-                    <p><a href="#" class="btn btn-primary mr-md-4 py-2 px-4">Saiba mais</a></p>
+                    <p><a href="#saiba" class="btn btn-primary mr-md-4 py-2 px-4">Saiba mais</a></p>
                 </div>
                 <div class="col-md-7 ftco-animate pl-5">
                     <h1 class="text-center">Solicite já</h1>
 
-                    <form action="#" class="contact-form">
+                    <form action="../php/form_solicitacao_escrituras.php" method="POST" class="contact-form">
                         <div class="form-group mb-1">
                             <div class="d-flex">
-                                <input type="text" class="form-control w-75" placeholder="Nome Completo">
-                                <input type="text" class="form-control w-25" placeholder="Telefone">
+                                <input name="name" type="text" class="form-control w-75" placeholder="Nome Completo">
+                                <input name="phone" type="text" class="form-control w-25" placeholder="Telefone">
                             </div>
                         </div>
                         <div class="form-group mb-1">
-                            <input type="text" class="form-control" placeholder="Email">
+                            <input name="email" type="text" class="form-control" placeholder="Email">
                         </div>
                         <div class="form-group mb-1">
-                            <input type="text" class="form-control" placeholder="Escrevente de preferência">
+                            <input name="escrevente" type="text" class="form-control" placeholder="Escrevente de preferência">
+
                         </div>
                         <div class="form-group mb-1">
-                            <input type="text" class="form-control" placeholder="Tipo de escritura">
+                            <input name="tipo" type="text" class="form-control" placeholder="Tipo de escritura">
                         </div>
                         <div class="form-group mb-1">
-                            <textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="Observações"></textarea>
+                            <textarea name="message" cols="30" rows="5" class="form-control" placeholder="Observações"></textarea>
                         </div>
                         <div class="form-group mb-1">
                             <div class="d-flex justify-content-center">
-
-                                <input type="submit" value="Solicitar" class="btn btn-primary py-3 px-5">
+                                <button type="submit" class="btn btn-primary py-3 px-5">Solicitar</button>
                             </div>
                         </div>
                     </form>
@@ -110,6 +110,7 @@
             </div>
         </div>
     </div>
+    <div id="saiba" class="mb-5"></div>
     <section class="ftco-section ftco-degree-bg pt-5">
         <div class="container">
             <div class="row">

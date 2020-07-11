@@ -99,9 +99,11 @@
                     <div class="heading-section ftco-animate">
                         <span class="subheading">Serviços</span>
                         <h2 class="mb-2">Por que nos escolher?</h2>
+
                         <p>Nós, do 9º Ofício, estamos sempre trabalhando para facilitar a vida do cliente. Por isso,
                             contamos com solicitação online de diversos serviços ofertados pelo Cartório.</p>
                         <p><a href="servicos.html" class="btn btn-primary py-3 px-4">Ver todos serviços</a></p>
+
                     </div>
                 </div>
                 <div class="col-lg-9 services-wrap px-4 pt-5">
@@ -131,7 +133,8 @@
                                 </div>
                                 <div class="text">
                                     <h3>Inventários</h3>
-                                    <p>Inventário é um documento contabilístico que consiste em uma listagem de bens que
+                                    <p>Inventário é um documento contabilístico que consiste em uma listagem de bens
+                                        que
                                         pertencem a uma pessoa ou entidade.</p>
                                 </div>
                                 <a href="servicos/inventarios.html"
@@ -222,6 +225,7 @@
                                                 <h4>Endereço</h4>
                                                 <p>
                                                     Rua General Pereira da Silva, 151 <br /> Icaraí, Niterói-RJ <br />
+                                                    24220-030
                                                 </p>
                                             </div>
                                         </div>
@@ -260,23 +264,26 @@
             <div class="row d-md-flex justify-content-end">
                 <div class="col-md-6 half p-3 py-5 pl-md-5 ftco-animate heading-section heading-section-white">
                     <span class="subheading">PRECISA DE AJUDA?</span>
+
                     <h2 class="mb-4">Mande-nos sua dúvida e nós iremos te ajudar!</h2>
-                    <form action="#" class="consultation">
+
+                    <form action="php/form_contato.php" method="POST" class="consultation">
+
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Nome">
+                            <input name="name" type="text" class="form-control" placeholder="Nome">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Email">
+                            <input name="email" type="text" class="form-control" placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Telefone">
+                            <input name="phone" type="text" class="form-control" placeholder="Telefone">
                         </div>
                         <div class="form-group">
-                            <textarea name="" id="" cols="30" rows="7" class="form-control"
+                            <textarea name="message" cols="30" rows="7" class="form-control"
                                 placeholder="Mensagem"></textarea>
                         </div>
                         <div class="form-group">
-                            <input type="submit" value="Enviar mensagem" class="btn btn-dark py-3 px-4">
+                            <button type="submit" class="btn btn-dark py-3 px-4">Enviar mensagem</button>
                         </div>
                     </form>
                 </div>
