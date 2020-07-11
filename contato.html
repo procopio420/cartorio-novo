@@ -137,7 +137,7 @@
         <div class="container">
             <div class="row block-9 no-gutters">
                 <div class="col-lg-6 order-md-last d-flex">
-                    <form action="php/form_contato.php" method="POST" class="bg-light p-5 contact-form">
+                    <form action="php/form_contato.php" id="test" method="POST" class="bg-light p-5 contact-form">
                         <h1 class="text-center">Contato</h1>
                         <div class="form-group">
                             <input name="name" type="text" class="form-control" placeholder="Nome">
@@ -185,7 +185,13 @@
     <script src="js/jquery.animateNumber.min.js"></script>
     <script src="js/scrollax.min.js"></script>
     <script src="js/main.js"></script>
-
+    <script>
+        const test = document.getElementById('test');
+        test.addEventListener('submit', (e) => {
+            e.preventDefault()
+            console.log(e)
+        })
+    </script>
 </body>
 
 </html>
