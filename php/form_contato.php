@@ -1,6 +1,6 @@
 <?php
 # Put your config
-$emailTo = "teste@9oficioniteroi.com";
+$emailTo = "contato@9oficioniteroi.com";
 $vname = "Cartorio 9 Oficio Niteroi";
 
 # End your config
@@ -29,7 +29,6 @@ echo "<script type='text/javascript'>
 alert('Insira um email válido.'); 
 </script>"; 
 echo "<script>location.href='contato.html'</script>"; // Página que será redirecionada
-echo "<script>console.log('if')</script>";
 }
 
 
@@ -38,9 +37,7 @@ else{
 echo "<script type='text/javascript'> 
 alert('Sua mensagem foi enviada com sucesso!'); 
 </script>"; 
-
 echo "<script>window.history.back();</script>"; // Página que será redirecionada
-echo "<script>console.log('else')</script>";
 }
 
 ?>
