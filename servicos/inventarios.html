@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="../css/flaticon.css">
     <link rel="stylesheet" href="../css/icomoon.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
@@ -74,29 +76,33 @@
                 <div class="col-md-5 ftco-animate">
                     <h1 class="mb-3">Inventário</h1>
                     <p>Inventário é um documento contabilístico que consiste em uma listagem de bens que pertencem a uma pessoa, entidade ou comunidade.</p>
-                    <p><a href="#saiba" class="btn btn-primary mr-md-4 py-2 px-4">Saiba mais</a></p>
+                    <a href="#saiba" class="btn btn-primary mr-md-4 py-2 px-4">
+                        <div class="d-flex align-items-center">
+                            Saiba mais <span class="material-icons">expand_more</span>
+                        </div>
+                    </a>
                 </div>
                 <div class="col-md-7 ftco-animate pl-5">
-                    <h2 class="text-center h1">Solicite já</h2>
+                    <h2 class="text-center text-white font-weight-bold h1">Solicite já</h2>
 
                     <form action="../php/form_solicitacao_inventarios.php" method="POST" class="contact-form">
                         <div class="form-group mb-1">
                             <div class="d-flex">
-                                <input name="name" type="text" class="form-control w-75" placeholder="Nome Completo">
-                                <input name="phone" type="text" class="form-control w-25" placeholder="Telefone">
+                                <input name="name" type="text" class="form-control w-75" placeholder="Nome completo" required>
+                                <input name="phone" type="tel" class="form-control w-25 ml-1" placeholder="Telefone" required>
                             </div>
                         </div>
                         <div class="form-group mb-1">
-                            <input name="email" type="text" class="form-control" placeholder="Email">
+                            <input name="email" type="email" class="form-control" placeholder="Email" required>
                         </div>
                         <div class="form-group mb-1">
-                            <select class="form-control" aria-placeholder="Escrevente de preferencias" id="escreventeSelect" name="escrevente" type="email" required>
-                                <option selected disabled value="Sem preferencia">Escrevente de preferencia</option>
-                                <option value="Sem preferencia">Sem preferencia</option>
+                            <select class="form-control" id="escreventeSelect" name="escrevente" required>
+                                <option selected disabled value="Sem preferencia">Escrevente de preferência</option>
+                                <option value="Sem preferencia">Sem preferência</option>
                             </select>
                         </div>
                         <div class="form-group mb-1">
-                            <textarea name="message" cols="30" rows="5" class="form-control" placeholder="Observacoes"></textarea>
+                            <textarea name="message" cols="30" rows="5" class="form-control" placeholder="Observações"></textarea>
                         </div>
                         <div class="form-group mb-1">
                             <div class="d-flex justify-content-center">
@@ -181,7 +187,11 @@
                         <li>Cópia da OAB do advogado.</li>
                     </ul>
                     <div class="d-flex justify-content-center">
-                        <a href="#" class="btn btn-primary">Solicitar Invetário</a>
+                        <a href="#" class="btn btn-primary">
+                            <div class="d-flex align-items-center">
+                                Solicitar Inventário <span class="material-icons">expand_less</span>
+                            </div>
+                        </a>
                     </div>
 
                 </div>
