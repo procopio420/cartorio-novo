@@ -77,26 +77,26 @@
                     <p><a href="#saiba" class="btn btn-primary mr-md-4 py-2 px-4">Saiba mais</a></p>
                 </div>
                 <div class="col-md-7 ftco-animate pl-5">
-                    <h2 class="text-center h1">Solicite ja</h2>
+                    <h2 class="text-center text-white font-weight-bold h1">Solicite ja</h2>
 
                     <form action="../php/form_solicitacao_divorcios.php" method="POST" class="contact-form">
                         <div class="form-group mb-1">
                             <div class="d-flex">
-                                <input name="name" type="text" class="form-control w-75" placeholder="Nome Completo">
-                                <input name="phone" type="text" class="form-control w-25" placeholder="Telefone">
+                                <input name="name" type="text" class="form-control w-75" placeholder="Nome completo" required>
+                                <input name="phone" type="tel" class="form-control w-25 ml-1" placeholder="Telefone" required>
                             </div>
                         </div>
                         <div class="form-group mb-1">
-                            <input name="email" type="text" class="form-control" placeholder="Email">
+                            <input name="email" type="email" class="form-control" placeholder="Email" required>
                         </div>
                         <div class="form-group mb-1">
-                            <select class="form-control" aria-placeholder="Escrevente de preferencias" id="escreventeSelect" name="escrevente" type="email" required>
-                                <option selected disabled value="Sem preferencia">Escrevente de preferencia</option>
-                                <option value="Sem preferencia">Sem preferencia</option>
+                            <select class="form-control" id="escreventeSelect" name="escrevente" type="email" required>
+                                <option selected disabled value="Sem preferencia">Escrevente de preferência</option>
+                                <option value="Sem preferencia">Sem preferência</option>
                             </select>
                         </div>
                         <div class="form-group mb-1">
-                            <textarea name="message" cols="30" rows="5" class="form-control" placeholder="Observacoes"></textarea>
+                            <textarea name="message" cols="30" rows="5" class="form-control" placeholder="Observações"></textarea>
                         </div>
                         <div class="form-group mb-1">
                             <div class="d-flex justify-content-center">
@@ -116,17 +116,17 @@
                 <div class="col-lg-4 sidebar pl-lg-5 ftco-animate">
                     <div class="sidebar-box ftco-animate">
                         <div class="categories">
-                            <h3>Servicos</h3>
+                            <h3>Serviços</h3>
                             <li><a href="./escrituras.html">Escrituras <span class="ion-ios-arrow-forward"></span></a></li>
-                            <li><a href="./inventarios.html">Inventarios<span class="ion-ios-arrow-forward"></span></a></li>
-                            <li class="active"><a href="./divorcios.html">Divorcios<span class="ion-ios-arrow-forward"></span></a></li>
-                            <li><a href="./usucapioes.html">Usucapioes<span class="ion-ios-arrow-forward"></span></a></li>
+                            <li><a href="./inventarios.html">Inventários<span class="ion-ios-arrow-forward"></span></a></li>
+                            <li class="active"><a href="./divorcios.html">Divórcios<span class="ion-ios-arrow-forward"></span></a></li>
+                            <li><a href="./usucapioes.html">Usucapiões<span class="ion-ios-arrow-forward"></span></a></li>
                             <li><a href="./atas.html">Atas Notariais <span class="ion-ios-arrow-forward"></span></a></li>
-                            <li><a href="./procuracoes.html">Procuracoes <span class="ion-ios-arrow-forward"></span></a></li>
-                            <li><a href="./certidoes.html">Certidoes <span class="ion-ios-arrow-forward"></span></a></li>
+                            <li><a href="./procuracoes.html">Procurações <span class="ion-ios-arrow-forward"></span></a></li>
+                            <li><a href="./certidoes.html">Certidões <span class="ion-ios-arrow-forward"></span></a></li>
                             <li><a href="./testamentos.html">Testamentos <span class="ion-ios-arrow-forward"></span></a></li>
                             <li><a href="./firmas.html">Reconhecimento de firmas <span class="ion-ios-arrow-forward"></span></a></li>
-                            <li><a href="./copias.html">Autenticacao de copias <span class="ion-ios-arrow-forward"></span></a></li>
+                            <li><a href="./copias.html">Autenticação de cópias <span class="ion-ios-arrow-forward"></span></a></li>
                         </div>
                     </div>
 
