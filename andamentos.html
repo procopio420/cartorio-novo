@@ -72,21 +72,28 @@
         </div>
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
-                <div class="col-md-8 ftco-animate">
+                <div class="col-md-8 col-sm-12 col-xs-12 ftco-animate" id="consultaContainer">
                     <h2 class="subheading">Acompanhe seus protocolos e Certidões no CARTÓRIO 9 OFÍCIO DE NITERÓI </h2>
                     <h1>Veja o status do seu registro ou sua averbação</h1>
-
-                    <br>
-                    <div style="border:3px solid #0073ff; padding: 5px 10px; border-radius: 3px;">
-
-                        <p class="d-flex align-items-center mb-0"><strong class="text-white">Infelizmente, nossos serviços de busca estão em manutenção!</strong><span class="material-icons text-white ml-auto" style="font-size: 48px;">
-                            construction
-                            </span></p>
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-md-6 col-sm-12 col-sx-12 mt-2">
+                            <button class="btn btn-primary btn-lg" id="consultaRegistro">
+                                <div class="d-flex align-items-center">
+                                    <span class="material-icons ml-1">insert_drive_file</span>Consultar Registro
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col-md-6 col-sm-12 col-sx-12 mt-2">
+                            <button class="btn btn-primary btn-lg" id="consultaCertidao">
+                                <div class="d-flex align-items-center">
+                                    <span class="material-icons ml-1">insert_drive_file</span>Consultar Certidão
+                                </div>
+                            </button>
+                        </div>
                     </div>
-                    <!-- <p class="py-2">
-                        <a href="#" class="btn btn-primary mr-md-4 consulta_andamento_registro">Consultar registro</a>
-                        <a href="#" class="btn btn-primary mr-md-4 consulta_andamento_certidao">Consultar certidao</a>
-                    </p> -->
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12" id="consultaResultado">
+                    
                 </div>
             </div>
         </div>
@@ -96,8 +103,6 @@
         <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
         <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
             stroke="#0073ff" /></svg></div>
-
-    <!-- <script src="https://servcom.com.br/atualizacao-andamentos/gateway?ID_CLIENTE=702&OPER=JANELA_CONSULTA" type="text/javascript"></script> -->
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -112,7 +117,7 @@
     <script src="js/jquery.animateNumber.min.js"></script>
     <script src="js/scrollax.min.js"></script>
     <script src="js/main.js"></script>
-
+    <script src="js/andamentos.js"></script>
 </body>
 
 </html>

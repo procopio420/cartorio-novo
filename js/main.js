@@ -107,6 +107,47 @@
              }
          });
 
+         $('.escreventesCarousel').owlCarousel({
+            loop: true,
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            navText: ['<span class="ion-ios-arrow-back m-3" style="color: #bbb; display: inline-block; width: 2rem">', '<span class="ion-ios-arrow-forward m-3" style="color: #bbb; display: inline-block; width: 2rem">'],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        });
+
+        $('.servicesCarousel').owlCarousel({
+            loop: true,
+            nav: true,
+            dots: false,
+                        autoplay: true,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            navText: ['<span class="ion-ios-arrow-back m-3" style="color: #bbb; display: inline-block; width: 2rem">', '<span class="ion-ios-arrow-forward m-3" style="color: #bbb; display: inline-block; width: 2rem">'],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        });
 
      };
      carousel();
